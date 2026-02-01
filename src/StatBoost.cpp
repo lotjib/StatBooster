@@ -137,7 +137,7 @@ void StatBoosterPlayer::OnPlayerGroupRollRewardItem(Player* player, Item* item, 
     }
 }
 
-bool StatBoosterPlayer::CanCastItemUseSpell(Player* player, Item* item, SpellCastTargets const& targets, uint8 /*cast_count*/, uint32 /*glyphIndex*/)
+bool StatBoosterPlayer::OnPlayerCanCastItemUseSpell(Player* player, Item* item, SpellCastTargets const& targets, uint8 /*cast_count*/, uint32 /*glyphIndex*/)
 {
     if (!item)
     {
