@@ -20,7 +20,7 @@ public:
     void OnPlayerQuestRewardItem(Player* player, Item* item, uint32 /*count*/) override;
     void OnPlayerCreateItem(Player* player, Item* item, uint32 /*count*/) override;
     void OnPlayerGroupRollRewardItem(Player* player, Item* item, uint32 /*count*/, RollVote /*voteType*/, Roll* /*roll*/) override;
-    bool CanCastItemUseSpell(Player* /*player*/, Item* /*item*/, SpellCastTargets const& /*targets*/, uint8 /*cast_count*/, uint32 /*glyphIndex*/) override;
+    bool OnPlayerCanCastItemUseSpell(Player* /*player*/, Item* /*item*/, SpellCastTargets const& /*targets*/, uint8 /*cast_count*/, uint32 /*glyphIndex*/) override;
 };
 
 class StatBoosterWorld : public WorldScript
